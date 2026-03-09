@@ -1,0 +1,17 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sono:wght@400&family=UnifrakturCook:wght@700&display=swap");
+
+@layer utilities {
+  .font-sono {
+    font-family: "Sono", monospace;
+  }
+
+  .font-bebas {
+    font-family: "Bebas Neue", sans-serif;
+  }
+
+  .font-unifraktur {
+    font-family: "UnifrakturCook", serif;
+  }
+}
+
