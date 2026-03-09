@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Navbar } from "../../components/navbar";
-import foto from "../../assets/images.png";
+import foto from "../../assets/minhaFoto.jpeg";
 
 export function Home() {
   const text = "Antonio Gabriel";
@@ -46,17 +46,20 @@ export function Home() {
   return (
     <div className="bg-[#C8A96A] h-screen">
       <Navbar />
-      <div className="p-10 mt-10">
-        <h1 className="font-sono text-left text-2xl sm:text-4xl text-[#3B2A23]">
-          Hi! i am
-        </h1>
-        <h1 className="font-sono text-2xl sm:text-4xl text-[#5A1F1B]">
-          {displayText}
-          <span className="animate-pulse duration-75">|</span>
-        </h1>
-      </div>
-      <div className="justify-items-center">
-        <img className="h-60 w-60 sm:h-80 sm:w-80 rounded-full" src={foto} />
+      <div className="p-10 mt-10 flex flex-col md:flex-row lg:p-20">
+        <div className="w-full m-auto font-sono text-left text-2xl sm:text-4xl md:text-3xl lg:text-4xl xl:text-5xl">
+          <h1 className="text-[#3B2A23]">Hi! i am</h1>
+          <h1 className="text-[#5A1F1B]">
+            {displayText}
+            <span className="animate-pulse duration-75">|</span>
+          </h1>
+        </div>
+        <div className="w-full justify-items-center lg:justify-items-end">
+          <img
+            className="h-60 w-60 mt-15 md:mt-0 sm:h-80 sm:w-80 lg:w-100 lg:h-100 rounded-full object-cover"
+            src={foto}
+          />
+        </div>
       </div>
     </div>
   );
